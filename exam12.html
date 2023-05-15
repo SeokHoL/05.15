@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var r =prompt("반지름을 입력하세요");
-        var h =prompt("높이을 입력하세요");
+        // var r =prompt("반지름을 입력하세요");
+        // var h =prompt("높이을 입력하세요");
 
-        var volume = Math.PI*Math.pow(r,2)*h;
+        // var volume = Math.PI*Math.pow(r,2)*h;
         
-        alert(volume);
+        // alert(volume);
+
+
+        function circle(r,h){
+            return Math.PI*r*r*h
+        }
+        var r =parseInt(prompt("반지름을 입력하세요"));    //prompt를 쓰면 문자열을 반환하기때문에   pareInt를 써서 정수로 변환해줘야 정확한값을 얻을수있다.
+        var h =parseInt(prompt("높이을 입력하세요"));   //prompt를 쓰면 문자열을 반환하기때문에   pareInt를 써서 정수로 변환해줘야 정확한값을 얻을수있다.
+        
+        alert(circle(r,h));
  
     </script>
 </head>
